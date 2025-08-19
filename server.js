@@ -36,5 +36,5 @@ sequelize.authenticate()
   .then(() => console.log('✅ DB connected'))
   .then(() => sequelize.sync())
   .then(() => seedAdmin())   // ✅ Auto-seed admin
-  .then(() => app.listen(PORT, () => console.log(`🚀 API on http://localhost:${PORT}`)))
+ .then(() => app.listen(PORT, () => console.log(`🚀 API running on port ${PORT}`)))
   .catch(err => console.error('❌ DB error:', err));
